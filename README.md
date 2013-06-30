@@ -67,5 +67,5 @@ Last, you'll want to create the directory where the scripts are saved.  The defa
 Customization
 -------------
 
-The `bashtag-save` function is really simple.  Open `bashtag-save.sh` and give it a look. To change the tag prefix the function uses to recognize if a command should be saved or not, just change the `save_tag_prefix` variable (the default is `#save:`).  To change the path were scripts are saved, change the `script_path` variable (the default is `~/scripts/saved/`).  To change what gets written to the script, change the stuff between the `EOL`s on the line that starts with `cat > $script_file` (the default is just a [shebang](http://en.wikipedia.org/wiki/Shebang_(Unix)) line, then the command).
+The `bashtag-save` function is really simple.  Open `bashtag-save.sh` and give it a look. To change the tag prefix the function uses to recognize if a command should be saved or not, just change the `save_tag_prefix` variable (the default is `#save:`).  To change the path were scripts are saved, change the `script_path` variable (the default is `~/scripts/saved/`).  To change what gets written to the script, change the stuff between the `EOL`s on the line that starts with `cat > $script_file` (the default is just a [shebang](http://en.wikipedia.org/wiki/Shebang_%28Unix%29) line, then the command).
 
