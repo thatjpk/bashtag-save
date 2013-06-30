@@ -31,7 +31,7 @@ Adding the `bashtag-save` function to `$PROMPT_COMMAND` makes your shell aware o
     (avconv does stuff again...)
     jpk@truth:~$ 
 
-So tagging something with `#save:scriptname` will save the command to a script at at `~/scripts/saved/scriptname.sh`. You can leave it there for later, go edit it to build a more complex script around the command, whatever.
+So tagging something with `#save:scriptname` will save the command to a script at `~/scripts/saved/scriptname.sh`. You can leave it there for later, go edit it to build a more complex script around the command, whatever.
 
 Installation
 ------------
@@ -67,5 +67,5 @@ Last, you'll want to create the directory where the scripts are saved.  The defa
 Customization
 -------------
 
-The `bashtag-save` function is really simple.  Open `bashtag-save.sh` and give it a look. To change the tag prefix the function uses to recognize if a command should be saved or not, just change the `save_tag_prefix` variable.  To change the path were scripts are saved, change the `script_path` variable.  To change what gets written to the script, change the stuff between the `EOL`s on the line that starts with `cat > $script_file`.
+The `bashtag-save` function is really simple.  Open `bashtag-save.sh` and give it a look. To change the tag prefix the function uses to recognize if a command should be saved or not, just change the `save_tag_prefix` variable (the default is `#save:`).  To change the path were scripts are saved, change the `script_path` variable (the default is `~/scripts/saved/`).  To change what gets written to the script, change the stuff between the `EOL`s on the line that starts with `cat > $script_file` (the default is just a [shebang](http://en.wikipedia.org/wiki/Shebang_(Unix)) line, then the command).
 
